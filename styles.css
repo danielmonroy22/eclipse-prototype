@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* Home Page */
+
+.home-page {
+    background-image: url(./images/home-page-image.jpeg);
+    background-position: center;
+    background-size: 100%;
+    height: 100vh;
+
+}
+
+/* NavBar */
+
+.navbar {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+
+
+}
+
+.logo {
+    flex: 1;
+
+}
+
+.Menu-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+
+}
+
+/* Hero-section */
+.hero-section {
+
+    height: 85%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-div {
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+.h1-top {
+    font-size: 2.3rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p-top {
+    font-size: 0.8rem;
+}
+
+.bottom-div {
+    display: flex;
+    flex-direction: row;
+
+    padding: 40px;
+}
+
+.icons {
+    display: flex;
+    width: 60%;
+
+    margin: auto;
+
+    color: white;
+    gap: 2rem;
+
+}
+
+i {
+    color: white;
+    font-size: 1rem;
+}
+
+.icon3-text {
+    color: white;
+}
+
+.icon1 {
+
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+
+
+}
+
+.order-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 25%;
+}
+
+.order-button button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: none;
+    border-color: white;
+    margin: auto;
+    color: white;
+    cursor: pointer;
+    font-size: 0.7rem;
+}
+
+.description {
+    font-size: 0.75rem;
+}
+
+/*  */
