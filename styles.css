@@ -13,13 +13,14 @@
 /* Home Page */
 
 .home-page {
-    background-image: url(./images/home-page-image.jpeg);
+    background-image: url(./images/pexels-vivint-solar-2850347.jpg);
+
 
     background-size: 100% 100%;
     height: 100vh;
     background-repeat: no-repeat;
 
-    box-shadow: 15px 15px 10px #BBF;
+
 
     /* box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.231); */
 
@@ -41,6 +42,13 @@
 
 .logo {
     flex: 1;
+
+
+}
+
+.image-logo {
+    height: 3rem;
+    width: 9rem;
 
 }
 
@@ -86,7 +94,7 @@
     flex-direction: row;
     width: 80%;
 
-    margin: 0px auto;
+    margin: 20px auto;
 }
 
 .icons {
@@ -142,27 +150,114 @@ i {
     font-size: 0.75rem;
 }
 
+/* savings section  */
+.savings {
+    height: 100vh;
+    display: flex;
 
 
+}
+
+.description-savings {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    padding: 40px 40px;
 
 
+}
+
+.headings-and-p h4 {
+    color: black;
+}
+
+.h2-savings {
+    color: black;
+    padding-top: 10px;
+    font-weight: 500;
+
+}
+
+.headings-and-p p {
+    font-size: 0.8rem;
+    color: black;
+}
+
+.button-savings button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 500;
+    background: none;
+    border-color: black;
+
+}
+
+.right-image-savings img {
+    width: 100%;
+    height: 100%;
+}
+
+.right-image-savings {
+    flex: 3;
+}
+
+/* Design Section */
+.Design {
+    height: 100vh;
+    display: flex;
 
 
+}
+
+.description-Design {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    padding: 40px 40px;
 
 
+}
 
+.headings-and-p h4 {
+    color: black;
+}
 
+.h2-Design {
+    color: black;
+    padding-top: 10px;
+    font-weight: 500;
 
+}
 
+.headings-and-p p {
+    font-size: 0.8rem;
+    color: black;
+}
 
+.button-Design button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 500;
+    background: none;
+    border-color: black;
 
+}
 
+.right-image-Design img {
+    width: 100%;
+    height: 100%;
+}
 
-
-
+.right-image-Design {
+    flex: 3;
+}
 
 /* Media Queries */
-@media (max-width: 500px) {
+@media (max-width: 760px) {
 
     /* hero section */
     .home-page {
@@ -197,5 +292,28 @@ i {
         padding: 5px 60px;
 
 
+    }
+
+    .image-logo {
+        height: 2rem;
+        width: 6rem;
+    }
+
+    .savings {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .Design {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+@media(min-width:280px) and (max-width:375px) {
+    .bottom-div {
+        flex: 2;
     }
 }
