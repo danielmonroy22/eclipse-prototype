@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 
@@ -13,9 +14,14 @@
 
 .home-page {
     background-image: url(./images/home-page-image.jpeg);
-    background-position: center;
-    background-size: 100%;
+
+    background-size: 100% 100%;
     height: 100vh;
+    background-repeat: no-repeat;
+
+    box-shadow: 15px 15px 10px #BBF;
+
+    /* box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.231); */
 
 }
 
@@ -30,6 +36,7 @@
 
 
 
+
 }
 
 .logo {
@@ -39,7 +46,7 @@
 
 .Menu-link {
     text-decoration: none;
-    color: black;
+
     font-weight: 400;
 
 }
@@ -77,8 +84,9 @@
 .bottom-div {
     display: flex;
     flex-direction: row;
+    width: 80%;
 
-    padding: 40px;
+    margin: 0px auto;
 }
 
 .icons {
@@ -105,7 +113,7 @@ i {
 
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 30%;
     gap: 10px;
 
 
@@ -115,7 +123,7 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+
     width: 25%;
 }
 
@@ -124,7 +132,7 @@ i {
     border-radius: 20px;
     background: none;
     border-color: white;
-    margin: auto;
+
     color: white;
     cursor: pointer;
     font-size: 0.7rem;
@@ -134,4 +142,60 @@ i {
     font-size: 0.75rem;
 }
 
-/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 500px) {
+
+    /* hero section */
+    .home-page {
+        background-size: 250% 100%;
+        background-position: center;
+    }
+
+    .bottom-div {
+        display: block;
+
+
+
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+
+        width: 100%;
+
+    }
+
+    .order-button {
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+
+    }
+
+    .order-button button {
+        padding: 5px 60px;
+
+
+    }
+}
