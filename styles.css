@@ -9,16 +9,90 @@
 }
 
 
+main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+
+}
+
+section {
+    scroll-snap-align: center;
+}
+
+
+
+
+/* sections */
+.sections {
+
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 10px;
+
+
+}
+
+
+
+.labels-sections {
+
+    width: 4rem;
+
+    position: fixed;
+    top: 35%;
+    left: 10px;
+
+}
+
+.sections li {
+
+    display: flex;
+    width: 9rem;
+
+
+}
+
+
+.sections {
+    gap: 1.6rem;
+}
+
+.text {
+    padding-left: 1rem;
+    display: none;
+
+
+
+}
+
+
+
+.line i {
+    color: aquamarine;
+    cursor: pointer;
+
+}
+
+.line i:hover {
+    color: white;
+
+}
+
+
 
 /* Home Page */
 
 .home-page {
-    background-image: url(./images/pexels-vivint-solar-2850347.jpg);
+    background-image: url(./images/home-page-image.jpg);
 
 
     background-size: 100% 100%;
     height: 100vh;
     background-repeat: no-repeat;
+
 
 
 
@@ -67,6 +141,7 @@
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 .top-div {
@@ -108,10 +183,7 @@
 
 }
 
-i {
-    color: white;
-    font-size: 1rem;
-}
+
 
 .icon3-text {
     color: white;
@@ -154,7 +226,6 @@ i {
 .savings {
     height: 100vh;
     display: flex;
-
 
 }
 
@@ -209,6 +280,7 @@ i {
     display: flex;
 
 
+
 }
 
 .description-Design {
@@ -255,6 +327,175 @@ i {
 .right-image-Design {
     flex: 3;
 }
+
+/* Order installation section */
+.order-installation {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.order-image {
+
+    background-image: url(./images/order-installation-image.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+
+}
+
+.order-image img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.headings-orderinstallation {
+    display: flex;
+    padding: 70px 30px;
+
+    width: 80%;
+    margin: auto;
+
+
+
+}
+
+.leftDiv-order {
+    flex: 1;
+
+
+
+}
+
+.leftDiv-order button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 500;
+    background: none;
+    border-color: black;
+
+}
+
+.rightDiv-order {
+    flex: 2;
+}
+
+.headings-orderinstallation p {
+    font-size: 0.8rem;
+    color: black;
+}
+
+/* monitoring section */
+.monitoring {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.monitoring-image {
+
+    background-image: url(./images/monitoring-image2.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+
+}
+
+.monitoring-image img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.headings-monitoringinstallation {
+    display: flex;
+    padding: 70px 30px;
+
+    width: 80%;
+    margin: auto;
+
+
+
+}
+
+.leftDiv-monitoring {
+    flex: 1;
+    color: black;
+
+
+
+}
+
+.leftDiv-monitoring button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 500;
+    background: none;
+    border-color: black;
+
+}
+
+.rightDiv-monitoring {
+    flex: 2;
+
+}
+
+.rightDiv-monitoring p {
+    color: black;
+
+}
+
+.headings-orderinstallation p {
+    font-size: 0.8rem;
+    color: black;
+}
+
+/* final section */
+.final-section {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+
+
+
+}
+
+.center {
+    height: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.center p {
+    font-size: 0.8rem;
+}
+
+.center button {
+    background-color: black;
+    border-color: white;
+    border-radius: 20px;
+    width: 50%;
+    padding: 10px 0px;
+    font-size: 0.7rem;
+    font-weight: 600;
+
+    color: white;
+}
+
 
 /* Media Queries */
 @media (max-width: 760px) {
@@ -304,10 +545,42 @@ i {
         flex-direction: column-reverse;
     }
 
+    .button-savings {
+        margin-top: 20px;
+    }
+
     .Design {
         display: flex;
         flex-direction: column-reverse;
     }
+
+    .button-Design {
+        margin-top: 20px;
+    }
+
+    .headings-orderinstallation {
+        display: flex;
+        flex-direction: column;
+
+
+
+    }
+
+    .headings-monitoringinstallation {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .headings-monitoringinstallation button {
+        display: none;
+
+    }
+
+    .headings-orderinstallation button {
+        display: none;
+    }
+
 }
 
 
