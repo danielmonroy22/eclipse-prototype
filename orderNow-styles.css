@@ -8,7 +8,12 @@
     color: black;
 }
 
+body {
+    height: 100%;
+}
+
 /* main section */
+
 
 .main {
     height: 100vh;
@@ -59,13 +64,32 @@
     flex: 2;
     height: 100%;
     width: 100%;
+    background-image: url(./images/orderNow-image.jpg);
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
 }
 
 
 
 .input-div {
     flex: 1;
+}
 
+.choose-product {
+    flex: 1;
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .input-headings {
@@ -107,6 +131,7 @@
 
 #submit-button {
     background-color: rgba(0, 0, 255, 0.323);
+    cursor: pointer;
 }
 
 label {
@@ -136,3 +161,358 @@ i {
 input {
     text-align: center;
 }
+
+
+/* choose products div */
+
+.solar {
+    width: 40%;
+    border-radius: 20px;
+    height: 2rem;
+    background-color: rgba(128, 128, 128, 0.193);
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}
+
+.solar div {
+    display: flex;
+    width: 70%;
+    border-radius: 20px;
+    height: 1.7rem;
+    background-color: white;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    justify-content: center;
+
+    align-items: center;
+
+
+}
+
+.offset {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.offset p,
+a {
+    font-size: 0.7rem;
+}
+
+.offset h1 {
+    margin-top: 2rem;
+}
+
+.panel {
+    height: 42%;
+    width: 70%;
+    margin: 10px auto;
+
+    border-color: rgba(128, 128, 128, 0.831);
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.kw-headings {
+    padding: 10px 0px;
+}
+
+.kw-headings h4 {
+    font-size: 0.6rem;
+    color: gray;
+}
+
+.kw-headings p {
+    font-size: 0.7rem;
+    font-weight: 500;
+
+}
+
+.kw-avg {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.kw-image {
+    width: 30%;
+    height: 40%;
+    padding: 10px 0px;
+
+
+
+}
+
+.bottom-div-panel p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-top: 5px;
+    padding: 0px 40px 0px 17px;
+
+}
+
+.kw-p {
+    padding: 10px 0px;
+    width: 100%;
+
+    font-size: 0.8rem;
+}
+
+.edit-button {
+    width: 90%;
+    border-radius: 20px;
+    padding: 10px 0px;
+    background-color: rgba(128, 128, 128, 0.193);
+    margin: 0px auto;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.buttonEdit-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* pop up */
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup {
+    position: fixed;
+    top: -100vh;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: top 0ms ease-in-out 300ms;
+}
+
+.popup .overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: opacity 100ms ease-in-out 200ms;
+
+}
+
+.popup .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.15);
+    width: 95%;
+    max-width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 300ms ease-in-out;
+    opacity: 0;
+
+}
+
+
+.popup .popup-content p {
+    margin: 15px 0px;
+    color: #222;
+    font-size: 16px;
+    text-align: center;
+}
+
+.popup .popup-content .controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 0px;
+}
+
+.popup .popup-content .controls button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.popup .popup-content .controls .close-btn {
+    background: transparent;
+    color: #3284ed;
+}
+
+.popup .popup-content .controls .submit-btn {
+    background: #3284ed;
+    color: #fff;
+}
+
+.popup.active {
+    top: 0px;
+    transition: top 0ms ease-in-out 0ms;
+
+}
+
+.popup.active .overlay {
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+}
+
+.popup.active .popup-content {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+/* left div */
+.energy-needs {
+    flex: 1;
+}
+
+.headings-graphs {
+
+    height: 25%;
+}
+
+.headings-graphs p {
+
+    height: 50%;
+}
+
+
+.left-div-popup {
+
+    width: 50%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.graphs {
+    display: flex;
+    width: 100%;
+    height: 80%;
+
+}
+
+.bill-graph {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+
+
+}
+
+.bar-energy-Needs {
+    height: 10rem;
+    width: 18%;
+
+}
+
+.bar {
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.bill-graph-generated {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.billperMonth {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 50%;
+    color: black;
+    font-size: 0.9rem;
+
+
+}
+
+
+
+.bar-energy-Generated {
+    height: 10rem;
+    width: 18%;
+    background-color: #3284ed;
+    border-radius: 10px;
+
+}
+
+.energy-generated {
+    flex: 1;
+}
+
+
+
+.bar-generated {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.kw-graph {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: end;
+    color: black;
+    font-size: 0.9rem;
+    width: 50%;
+}
+
+/* right div */
+.right-div-popup {
+    flex: 1;
+}
+
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 781px) {
+    .content-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-div {
+        height: 60%;
+    }
+}
+
+
+
+@media(min-width:280px) and (max-width:375px) {}

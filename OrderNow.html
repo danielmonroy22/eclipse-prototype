@@ -14,6 +14,10 @@
         integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+
+
+
 </head>
 
 <body>
@@ -31,7 +35,7 @@
         </div>
         <div class="content-main">
             <div class="image-div">
-                <img src="./images/orderNow-image.jpg" alt="order now image" height="100%" width="100%">
+                <!-- <img src="./images/orderNow-image.jpg" alt="order now image" height="100%" width="100%"> -->
 
 
             </div>
@@ -44,19 +48,153 @@
 
 
 
-                <form action="index.html">
-                    <div class="form-div">
-                        <label for="adress">Home Address:</label>
-                        <input type="text" id="adress" name="adress" placeholder="&#xf601" class="place-icon"
-                            required><br><br>
-                        <label for="electric-bill">Average Electric Bill:</label>
-                        <input type="number" id="electric-bill" name="electric-bill" placeholder="/ mo"
-                            class="place-icon" required><br><br>
-                        <!-- <input type="submit" value="Submit" id="submit-button"> -->
-                        <button id="submit-button">Submit</button>
+
+                <div class="form-div">
+                    <label for="adress">Home Address:</label>
+                    <input type="text" id="adress" name="adress" placeholder="&#xf601" class="place-icon"
+                        required><br><br>
+                    <label for="electric-bill">Average Electric Bill:</label>
+                    <input type="number" id="electric-bill" name="electric-bill" placeholder="/ mo" class="place-icon"
+                        required><br><br>
+                    <!-- <input type="submit" value="Submit" id="submit-button"> -->
+                    <button id="submit-button" onclick="submitClicked()">Submit</button>
+
+                </div>
+
+            </div>
+
+            <div class="choose-product">
+                <div class="input-headings">
+                    <h1>Choose Your Product</h1>
+                    <a href="#" id="address-link"></a>
+
+                </div>
+                <div class="solar">
+                    <div>Solar panels</div>
+
+
+                </div>
+                <div class="offset">
+                    <p>Standard sizes, can be installed on existing roofs </p>
+                    <a href="#">Compare products</a>
+                    <h1>100%</h1>
+                    <a href="#">Est. Energy Offset</a>
+
+                </div>
+                <div class="panel">
+                    <div class="kw-avg">
+                        <div class="kw-headings">
+                            <h4>Eclipse Recommends</h4>
+                            <h2 class="kw-p"></h2>
+                            <p>1 Powerwall Battery</p>
+                            <a href="#">price</a>
+                        </div>
+                        <div class="kw-image">
+                            <img src="./images/kw-image-small.jpg" alt="kw-image" width="100%" height="100%"
+                                style="border-radius: 20px;">
+
+                        </div>
+                    </div>
+                    <div class="bottom-div-panel">
+                        <p>Price and system size shown are estimates, based on a 30,000 sq ft roof and $300 /mo electric
+                            bill</p>
+                        <div class="buttonEdit-div">
+                            <button class="edit-button" id="open-popup">EDIT</button>
+                        </div>
 
                     </div>
-                </form>
+                </div>
+
+                <div class="popup" id="popup">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <div class="left-div-popup">
+                            <div class="graphs">
+                                <div class="energy-needs">
+                                    <div class="headings-graphs">
+                                        <p>Your Energy Needs</p>
+                                        <hr size="4" width="95%" color="red">
+
+                                    </div>
+
+                                    <div class="bill-graph">
+                                        <div class="billperMonth">
+                                            $300 /mo <br>
+
+                                            Electric bill <br> 18,529 kWh /yr
+
+                                        </div>
+                                        <div class="bar-energy-Needs">
+                                            <div class="bar">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="energy-generated">
+                                    <div class="headings-graphs">
+                                        <p>Energy Generated</p>
+                                        <hr size="4" width="95%" color="red">
+
+                                    </div>
+
+                                    <div class="bill-graph-generated">
+                                        <div class="bar-energy-Generated">
+                                            <div class="bar-generated">
+
+                                            </div>
+                                        </div>
+                                        <div class="kw-graph">
+                                            12.00 kw Solar <br>18,108 kWh /yr
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="energy-offset">
+                                <h1>98% Energy offset</h1>
+                                <p>Generate less energy than you currently use</p>
+                            </div>
+                        </div>
+                        <div class="right-div-popup">
+                            <h1>Edit Your System</h1>
+                            <div class="solar">
+                                <div>Solar panels</div>
+
+
+                            </div>
+                            <div class="right-div-kw">
+
+                                <p>21.60 kW Solar Panels $59,184</p>
+                                <p>Available in 2.4 kW increments</p>
+                                <div class="increase-decrease-buttons">
+                                    <div class="decrease-btn">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <div class="increase-btn">
+                                        <i class="fa-solid fa-plus"></i>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>We use the average cost of electricity in your state to estimate how much power
+                                        you might use throughout the year</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
 
 
 
@@ -64,9 +202,23 @@
 
             </div>
 
+
+
+
+
+
+        </div>
+
         </div>
 
     </section>
+    <script src="/main.js"></script>
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmsCNwFX9ONFJRQlTJ1TZKoFQs6cr2ydI&libraries=places&callback=initMap">
+        </script>
+
+
 
 </body>
 
